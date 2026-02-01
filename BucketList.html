@@ -1,0 +1,130 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Bucket List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-style: italic;
+            background-image: url(frieren.gif);
+            background-size: 85%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 25px;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            max-width: 500px;
+            margin: 75px auto;
+            padding: 40px;
+            border-radius: 12px;
+        }
+
+        h1 {
+            text-align: center;
+            color:yellow
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin: 8px 0;
+            background: #f4f4f4;
+            border-radius: 8px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 12px;
+            transform: scale(1.2);
+            font-family: Arial, sans-serif;
+            font-style: italic;
+        }
+
+        input[type="checkbox"]:checked + .text {
+            text-decoration: line-through;
+            color: gray;
+            font-family: Arial, sans-serif;
+            font-style: italic;
+        }
+
+        input[type="checkbox"]:checked {
+            accent-color: gray;
+            font-family: Arial, sans-serif;
+            font-style: italic;
+        }
+        
+        input[type="checkbox"] {
+            margin-right: 12px;
+            transform: scale(1.2);
+            transition: transform 0.2s ease;
+        }
+
+        input[type="checkbox"]:hover {
+            transform: scale(1.35);
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin: 8px 0;
+            background: #f4f4f4;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            cursor: pointer;
+        }
+        .item:hover {
+            transform: scale(1.50);
+            background: #eaeaea;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        }
+        .item:hover {
+            box-shadow: 0 0 15px rgba(255, 255, 150, 0.6);
+        }  
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bucket List</h1>
+
+    <label class="item">
+        <input type="checkbox">
+        <div class="text">Learn to code</div>
+    </label>
+
+    <label class="item">
+        <input type="checkbox">
+        <div class="text">Graduate college</div>
+    </label>
+
+    <label class="item">
+        <input type="checkbox">
+        <div class="text">Get a Job</div>
+    </label>
+
+    <label class="item">
+        <input type="checkbox">
+        <div class="text">Have Own PC</div>
+    </label>
+
+    <label class="item">
+        <input type="checkbox">
+        <div class="text">Have a DSLR Camera</div>
+    </label>
+
+    <label class="item">
+        <input type="checkbox">
+        <div class="text">Travel to Japan</div>
+    </label>
+
+</div>
+
+</body>
+</html>
